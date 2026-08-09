@@ -1,0 +1,33 @@
+{
+  "name": "docs-site-builder",
+  "version": "1.0.0",
+  "description": "A static site generator that turns a /docs folder into a searchable documentation website.",
+  "main": "src/docs-site-builder.js",
+  "type": "commonjs",
+  "bin": {
+    "docs-site-builder": "src/docs-site-builder.js"
+  },
+  "scripts": {
+    "start": "node src/docs-site-builder.js",
+    "test": "node --test test/ || echo 'no tests yet \u2014 add some in test/'",
+    "tracker": "node src/achievement-tracker.js",
+    "roadmap": "node src/achievement-tracker.js --roadmap",
+    "setup": "bash scripts/setup.sh"
+  },
+  "keywords": [
+    "docs",
+    "static-site-generator",
+    "search",
+    "markdown",
+    "cli"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OWNER/docs-site-builder.git"
+  },
+  "author": ""
+}
